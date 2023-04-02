@@ -1,0 +1,55 @@
+git init -> inicijaliziranje na folderot
+
+git remote add origin https://github.com/DakiKing/SI_2023_lab1_211301.git -> povrzuvanje so oddaleceniot repozitorium
+
+Kreairame README.md file so ime prezime i indeks
+
+git add . -> spremanje na site fileovi vo commit sostojba
+git commit -m "Inital commit" -> commit koj e spremen za push
+
+Kreiranja na java file
+
+git add . 
+git commit -m "Add java class"
+
+git push origin master -> sinhronizacija na site granki
+
+git checkout -b bug1 -> Kreiranje i prefrlanje na bug1 branch
+git checkout -b bug2 -> Kreiranje i prefrlanje na bug2 branch
+git checkout -b bug3 -> Kreiranje i prefrlanje na bug3 branch
+
+git checkout bug1 -> Prefrlanje na bug1 branch
+
+Menjanje na bug vo java kodot
+
+git add .
+git commit -m "Fix wrong loop for reading"
+
+Menjanje na bug vo java kodot
+
+git add .
+git commit -m  Fix wrong condition in filterOddNumbers"
+
+Menjanje na bug vo java kodot
+
+git add .
+git commit -m Fix method sumEvenNumbers"
+
+
+git push origin bug1
+git push origin bug2
+git push origin bug3
+
+git checkout origin master
+
+git merge bug1
+git push origin master
+git merge bug2
+git push origin master
+git checkout master
+git rebase bug3
+git checkout master
+git merge bug3
+
+git push origin master
+
